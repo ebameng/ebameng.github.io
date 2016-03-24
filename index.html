@@ -120,7 +120,7 @@
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
-  <p class="site-subtitle">认真的小蜜蜂</p>
+  <p class="site-subtitle">一个集才华和美貌于一身的女子（神经）</p>
 </div>
 
 <div class="site-nav-toggle">
@@ -224,6 +224,300 @@
   
   
 
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/03/24/2016032403/" itemprop="url">
+                  CSS Hacks for IE6,IE7,IE8,IE9 and IE11
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-03-24T18:24:53+08:00" content="2016-03-24">
+              2016-03-24
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/24/2016032403/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/24/2016032403/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">#hack &#123;</span><br><span class="line">	color: red; /*All browsers */</span><br><span class="line">	color: red !important;  /*All browsers but IE6 */</span><br><span class="line">	_color: red; /* only works in IE6 */</span><br><span class="line">	*color: red; /* IE6,IE7 */</span><br><span class="line">	+color: red; /* only works in IE7 */</span><br><span class="line">	*+color: red; /* only works in IE7 */</span><br><span class="line">	color: red\9; /* IE6,7,8,9 */</span><br><span class="line">	color: red\0; /* IE8,9 */</span><br><span class="line">	color: red\9\0'; /* only works in IE9 */</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>IE10：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.ie10</span> <span class="selector-id">#hack</span> &#123;</span><br><span class="line">	<span class="attribute">color</span>: red; <span class="comment">/* only works in IE10 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>IE11的hack：<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">@media all and (-ms-high-contrast:none) &#123;</span><br><span class="line">	*::-ms-backdrop, 类名 &#123; 属性： 值 &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/03/24/2016032402/" itemprop="url">
+                  2016032402
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-03-24T17:30:20+08:00" content="2016-03-24">
+              2016-03-24
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/24/2016032402/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/24/2016032402/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>最近项目需要实现圆图像，自从有了CSS3的border-radius之后，实现变得简单了，但IE8及其以下依然不给力。</p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/03/24/2016032402/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/03/24/2016032401/" itemprop="url">
+                  Object.prototype.toString.call 能准确的判断JavaScript任何类型
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-03-24T11:02:58+08:00" content="2016-03-24">
+              2016-03-24
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/24/2016032401/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/24/2016032401/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Object.prototype.toString.call 能准确的判断JavaScript任何类型<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Object</span>.prototype.toString.call(<span class="string">'fwe'</span>)</span><br><span class="line"><span class="string">"[object String]"</span></span><br><span class="line"><span class="built_in">Object</span>.prototype.toString.call(<span class="number">22</span>)</span><br><span class="line"><span class="string">"[object Number]"</span></span><br><span class="line"><span class="built_in">Object</span>.prototype.toString.call(&#123;a:<span class="number">1</span>&#125;)</span><br><span class="line"><span class="string">"[object Object]"</span></span><br><span class="line"><span class="built_in">Object</span>.prototype.toString.call([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>])</span><br><span class="line"><span class="string">"[object Array]"</span></span><br><span class="line"><span class="built_in">Object</span>.prototype.toString.call(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;)</span><br><span class="line"><span class="string">"[object Function]"</span></span><br><span class="line"><span class="built_in">Object</span>.prototype.toString.call(<span class="built_in">eval</span>(<span class="string">'1+2'</span>))</span><br><span class="line"><span class="string">"[object Number]"</span></span><br></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
   <article class="post post-type-categories" " itemscope itemtype="http://schema.org/Article">
 
     
@@ -286,7 +580,7 @@
       
         
           
-            <p>额。因为我叫恶霸萌。所以怎么输出’eba’呢<br><code>([] + ![])[+!![]+!![]+!![]+!![]] + (({}) + ({}))[(+!![])+(+!![])] + ([] + ![])[+!![]]</code></p>
+            <p>额。因为我叫恶霸萌。所以怎么输出’eba’呢<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">([] + ![])[+!![]+!![]+!![]+!![]] + ((&#123;&#125;) + (&#123;&#125;))[(+!![])+(+!![])] + ([] + ![])[+!![]]</span><br></pre></td></tr></table></figure></p>
 <blockquote>
 <p>可以到控制台输出一下<br>原理：<br>‘false’[4]，<br>获得e——&gt; 需要获得’false’字符串的第四位<br>获得’false’字符串——&gt;<br>获得 4 ——&gt;!![] = 1；<br>同理,获得’boolean’[0],’false’[1]</p>
 </blockquote>
@@ -386,8 +680,7 @@
         
           
             <blockquote>
-<p>入群题目，发现太少人答对。<br>i++(值为i,再加1), ++i(先加1，值为加1后的值)<br><code>var i = 1;
-i++ + ++i - --i * i++ - i-- + ++i * i++ - i++</code><br><code>//1 + 3 - 2*2 - 3 + 3*3 - 4</code><br><code>//结果等于2，i为5;</code></p>
+<p>入群题目，发现太少人答对。<br>i++(值为i,再加1), ++i(先加1，值为加1后的值)<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> i = <span class="number">1</span>;</span><br><span class="line">i++ + ++i - --i * i++ - i-- + ++i * i++ - i++</span><br><span class="line"><span class="comment">//1 + 3 - 2*2 - 3 + 3*3 - 4`</span></span><br><span class="line"><span class="comment">//结果等于2，i为5;</span></span><br></pre></td></tr></table></figure></p>
 </blockquote>
 
           
@@ -453,6 +746,25 @@ i++ + ++i - --i * i++ - i-- + ++i * i++ - i++</code><br><code>//1 + 3 - 2*2 - 3 
             </time>
           </span>
 
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/心情/" itemprop="url" rel="index">
+                    <span itemprop="name">心情</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
           
 
           
@@ -552,17 +864,24 @@ i++ + ++i - --i * i++ - i-- + ++i * i++ - i++</code><br><code>//1 + 3 - 2*2 - 3 
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-count">6</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
 
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
