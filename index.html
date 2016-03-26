@@ -236,6 +236,131 @@
             
               
                 
+                <a class="post-title-link" href="/2016/03/26/60056c384c79b21a1db0602850500812/" itemprop="url">
+                  正则表达式的学习成果
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-03-26T18:18:12+08:00" content="2016-03-26">
+              2016-03-26
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/正则表达式/" itemprop="url" rel="index">
+                    <span itemprop="name">正则表达式</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/26/60056c384c79b21a1db0602850500812/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/26/60056c384c79b21a1db0602850500812/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>恩。写博客之前呢，喜欢唠唠，我这个人呢，让我看书感觉像是上语文课般痛苦- -貌似好像从小喜欢上数学课，数学课，做题目，做题目。<br>对，所以学正则表达式对我来说也跟上背古诗词一样烦人！！今天，是因为有个需求，我需要表达式，我不能保证大神时时刻刻都在，不能保证<br>大神每回都帮我写（重点是还免费），所以我问大神，今天心情是否甚好，，既然甚好，那就免费给本宝宝上一节叫正则表达式的课吧<del>~</del><br>啦啦啦啦。五分钟速成，由例子讲理论真是神一般的教学方法。。。。</p>
+<blockquote>
+<ol>
+<li>第一个需求，我想要 1900-01-01 到 2099-12-31 的日期<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/^(?:<span class="number">19</span>|<span class="number">20</span>)\d\d-(?:<span class="number">0</span>?[<span class="number">1</span><span class="number">-9</span>]|<span class="number">1</span>[<span class="number">0</span><span class="number">-2</span>])-(?:<span class="number">0</span>?[<span class="number">1</span><span class="number">-9</span>]|[<span class="number">1</span><span class="number">-2</span>]\d|<span class="number">3</span>[<span class="number">0</span><span class="number">-1</span>])$/</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>从左到右吧<br>^  ==&gt;  开头符号，匹配用来查找的字符串的开头，说到这里，说下$<br>$  ==&gt;  结尾符号<br>(?:19|20)\d\d  ==&gt;  意义就是匹配1900 到 2099<br>(?:19|20) ==&gt;  19或20<br>?:  ==&gt;  表示不捕捉，防止生成引用，能提升性能，节约空间。<br>|  ==&gt;  或; 如果有括号(),作用域仅在括号内，否则作用域在整个表达式<br>[]  ==&gt;  枚举需匹配的字符串<br>\d ==&gt; 数字 ==&gt; [0-9] ==&gt; 穷举[0123456789]<br>字符- ==&gt; 这里就是表示一个字符-</p>
+<p>(?:0?[1-9]|1[0-2]) ==&gt;  表示匹配月份1月到12月<br>?  ==&gt;  可匹配也可不匹配<br>0?[1-9]  ==&gt;  即匹配01,02,03…到09; 也可以匹配 1,2,…到9</p>
+<p>(?:0?[1-9]|[1-2]\d|3[0-1])  ==&gt; 表示匹配01-31 或1-31.觉得有了上面的内容到这里你已经可以理解的很完整了。</p>
+</blockquote>
+<p>到这一步，整个正则应该都能理解了。第一个例子，完毕！</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/03/24/57bf20cbb965989dd17bb6933bceadcd/" itemprop="url">
                   CSS Hacks for IE6,IE7,IE8,IE9 and IE11
                 </a>
@@ -959,7 +1084,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">6</span>
+              <span class="site-state-item-count">7</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -967,7 +1092,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -976,7 +1101,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
